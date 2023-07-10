@@ -1,0 +1,4 @@
+qa\testcases\OrderPageTest.class
+qa\testcases\LoginPageTest.class
+qa\testcases\HomePageTest.class
+qa\testcases\TodaysDealsPageTest.class

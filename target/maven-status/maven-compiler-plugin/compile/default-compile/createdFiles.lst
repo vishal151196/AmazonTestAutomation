@@ -1,0 +1,7 @@
+qa\base\TestBase.class
+qa\pages\HomePage.class
+qa\ExtentReportListener\ExtentReporterNG.class
+qa\util\TestUtil.class
+qa\pages\LoginPage.class
+qa\pages\OrderPage.class
+qa\pages\TodaysDealsPage.class

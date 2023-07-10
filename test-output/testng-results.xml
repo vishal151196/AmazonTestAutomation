@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="8" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-08T19:41:29Z" name="Amazon Automation Testing" finished-at="2023-07-08T19:46:13Z" duration-ms="284737">
+    <groups>
+    </groups>
+    <test started-at="2023-07-08T19:41:29Z" name="Test" finished-at="2023-07-08T19:46:13Z" duration-ms="284737">
+      <class name="qa.testcases.TodaysDealsPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.TodaysDealsPageTest@43f02ef2]" started-at="2023-07-08T19:42:00Z" name="setUp" finished-at="2023-07-08T19:42:19Z" duration-ms="19715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="categoryCheckTest()[pri:1, instance:qa.testcases.TodaysDealsPageTest@43f02ef2]" started-at="2023-07-08T19:42:19Z" name="categoryCheckTest" finished-at="2023-07-08T19:42:24Z" duration-ms="5031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categoryCheckTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.testcases.TodaysDealsPageTest@43f02ef2]" started-at="2023-07-08T19:42:24Z" name="tearDown" finished-at="2023-07-08T19:42:29Z" duration-ms="4400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.TodaysDealsPageTest@43f02ef2]" started-at="2023-07-08T19:43:20Z" name="setUp" finished-at="2023-07-08T19:43:33Z" duration-ms="13243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkBoxTest()[pri:2, instance:qa.testcases.TodaysDealsPageTest@43f02ef2]" started-at="2023-07-08T19:43:33Z" name="checkBoxTest" finished-at="2023-07-08T19:43:53Z" duration-ms="20060" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: (//div[@class='nav-progressive-content']//a)[1]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [17f0cfcc-c84e-40e4-a422-6a6096d34219, findElement {using=xpath, value=(//div[@class='nav-progressive-content']//a)[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:45612, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13608, moz:profile: C:\Users\Vishal\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:45612/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 17f0cfcc-c84e-40e4-a422-6a6096d34219]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: (//div[@class='nav-progressive-content']//a)[1]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [17f0cfcc-c84e-40e4-a422-6a6096d34219, findElement {using=xpath, value=(//div[@class='nav-progressive-content']//a)[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:45612, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13608, moz:profile: C:\Users\Vishal\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:45612/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 17f0cfcc-c84e-40e4-a422-6a6096d34219
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+at qa.pages.TodaysDealsPage.categoryCheck(TodaysDealsPage.java:30)
+at qa.testcases.TodaysDealsPageTest.checkBoxTest(TodaysDealsPageTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.testcases.TodaysDealsPageTest@43f02ef2]" started-at="2023-07-08T19:43:53Z" name="tearDown" finished-at="2023-07-08T19:43:55Z" duration-ms="1960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- qa.testcases.TodaysDealsPageTest -->
+      <class name="qa.testcases.OrderPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.OrderPageTest@239a307b]" started-at="2023-07-08T19:42:29Z" name="setUp" finished-at="2023-07-08T19:42:41Z" duration-ms="11954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchResults(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:qa.testcases.OrderPageTest@239a307b]" started-at="2023-07-08T19:42:41Z" name="searchResults" data-provider="getAmazonProductData" finished-at="2023-07-08T19:42:44Z" duration-ms="3097" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[watch]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Leather]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Timex]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchResults -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.testcases.OrderPageTest@239a307b]" started-at="2023-07-08T19:42:44Z" name="tearDown" finished-at="2023-07-08T19:42:49Z" duration-ms="4821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.OrderPageTest@239a307b]" started-at="2023-07-08T19:43:55Z" name="setUp" finished-at="2023-07-08T19:44:07Z" duration-ms="12119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SetItemPreference(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:qa.testcases.OrderPageTest@239a307b]" started-at="2023-07-08T19:44:07Z" name="SetItemPreference" data-provider="getAmazonProductData" finished-at="2023-07-08T19:44:23Z" duration-ms="15948" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[watch]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Leather]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Timex]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetItemPreference -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.testcases.OrderPageTest@239a307b]" started-at="2023-07-08T19:44:23Z" name="tearDown" finished-at="2023-07-08T19:44:28Z" duration-ms="4389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.OrderPageTest@239a307b]" started-at="2023-07-08T19:44:53Z" name="setUp" finished-at="2023-07-08T19:45:04Z" duration-ms="11754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FirstProductClick(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:qa.testcases.OrderPageTest@239a307b]" started-at="2023-07-08T19:45:04Z" name="FirstProductClick" data-provider="getAmazonProductData" finished-at="2023-07-08T19:45:24Z" duration-ms="20015" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[watch]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Leather]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Timex]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //input[@placeholder='Search Amazon']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f51f476c-72ca-48e8-ad48-268b6847622b, findElement {using=xpath, value=//input[@placeholder='Search Amazon']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:4149, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5448, moz:profile: C:\Users\Vishal\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:4149/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f51f476c-72ca-48e8-ad48-268b6847622b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@placeholder='Search Amazon']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f51f476c-72ca-48e8-ad48-268b6847622b, findElement {using=xpath, value=//input[@placeholder='Search Amazon']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:4149, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5448, moz:profile: C:\Users\Vishal\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:4149/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f51f476c-72ca-48e8-ad48-268b6847622b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
+at qa.pages.OrderPage.Search(OrderPage.java:72)
+at qa.testcases.OrderPageTest.FirstProductClick(OrderPageTest.java:70)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FirstProductClick -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.testcases.OrderPageTest@239a307b]" started-at="2023-07-08T19:45:24Z" name="tearDown" finished-at="2023-07-08T19:45:28Z" duration-ms="3756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.OrderPageTest@239a307b]" started-at="2023-07-08T19:45:28Z" name="setUp" finished-at="2023-07-08T19:45:40Z" duration-ms="12203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="OrderCheck(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:qa.testcases.OrderPageTest@239a307b]" started-at="2023-07-08T19:45:40Z" name="OrderCheck" data-provider="getAmazonProductData" finished-at="2023-07-08T19:46:09Z" duration-ms="28337" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[watch]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Leather]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Timex]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[200.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Navigation timed out after 10000 ms
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fdc68898-2975-4c1c-b2d4-5b4c900a3d70, clickElement {id=ec874ad4-02ec-4481-b47b-49514cffaf54}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:31908, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17376, moz:profile: C:\Users\Vishal\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:31908/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (fdc68898-2975-4c1c-b2d4-5b4c900a3d70)] -> xpath: //span[@class='a-button-inner']//input[@type='submit']]
+Session ID: fdc68898-2975-4c1c-b2d4-5b4c900a3d70]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Navigation timed out after 10000 ms
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fdc68898-2975-4c1c-b2d4-5b4c900a3d70, clickElement {id=ec874ad4-02ec-4481-b47b-49514cffaf54}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:31908, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17376, moz:profile: C:\Users\Vishal\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:31908/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (fdc68898-2975-4c1c-b2d4-5b4c900a3d70)] -> xpath: //span[@class='a-button-inner']//input[@type='submit']]
+Session ID: fdc68898-2975-4c1c-b2d4-5b4c900a3d70
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+at qa.pages.OrderPage.ItemPreference(OrderPage.java:104)
+at qa.testcases.OrderPageTest.OrderCheck(OrderPageTest.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderCheck -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.testcases.OrderPageTest@239a307b]" started-at="2023-07-08T19:46:09Z" name="tearDown" finished-at="2023-07-08T19:46:13Z" duration-ms="4563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- qa.testcases.OrderPageTest -->
+      <class name="qa.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.LoginPageTest@740fb309]" started-at="2023-07-08T19:41:29Z" name="setUp" finished-at="2023-07-08T19:41:38Z" duration-ms="9080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginPageTitleTest()[pri:1, instance:qa.testcases.LoginPageTest@740fb309]" started-at="2023-07-08T19:41:38Z" name="loginPageTitleTest" finished-at="2023-07-08T19:41:38Z" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.testcases.LoginPageTest@740fb309]" started-at="2023-07-08T19:41:38Z" name="tearDown" finished-at="2023-07-08T19:41:42Z" duration-ms="4390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.LoginPageTest@740fb309]" started-at="2023-07-08T19:42:49Z" name="setUp" finished-at="2023-07-08T19:42:57Z" duration-ms="8029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="amazonLogoImageTest()[pri:2, instance:qa.testcases.LoginPageTest@740fb309]" started-at="2023-07-08T19:42:57Z" name="amazonLogoImageTest" finished-at="2023-07-08T19:42:58Z" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonLogoImageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.testcases.LoginPageTest@740fb309]" started-at="2023-07-08T19:42:58Z" name="tearDown" finished-at="2023-07-08T19:43:02Z" duration-ms="4252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.LoginPageTest@740fb309]" started-at="2023-07-08T19:44:28Z" name="setUp" finished-at="2023-07-08T19:44:37Z" duration-ms="8785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:3, instance:qa.testcases.LoginPageTest@740fb309]" started-at="2023-07-08T19:44:37Z" name="loginTest" finished-at="2023-07-08T19:44:47Z" duration-ms="10664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.testcases.LoginPageTest@740fb309]" started-at="2023-07-08T19:44:47Z" name="tearDown" finished-at="2023-07-08T19:44:53Z" duration-ms="5432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- qa.testcases.LoginPageTest -->
+      <class name="qa.testcases.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.HomePageTest@7bd7d6d6]" started-at="2023-07-08T19:41:42Z" name="setUp" finished-at="2023-07-08T19:41:55Z" duration-ms="12386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CustomerNameTest()[pri:1, instance:qa.testcases.HomePageTest@7bd7d6d6]" started-at="2023-07-08T19:41:55Z" name="CustomerNameTest" finished-at="2023-07-08T19:41:55Z" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerNameTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.testcases.HomePageTest@7bd7d6d6]" started-at="2023-07-08T19:41:55Z" name="tearDown" finished-at="2023-07-08T19:42:00Z" duration-ms="4766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.testcases.HomePageTest@7bd7d6d6]" started-at="2023-07-08T19:43:02Z" name="setUp" finished-at="2023-07-08T19:43:14Z" duration-ms="12341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="MenuTest()[pri:2, instance:qa.testcases.HomePageTest@7bd7d6d6]" started-at="2023-07-08T19:43:14Z" name="MenuTest" finished-at="2023-07-08T19:43:16Z" duration-ms="1945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MenuTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.testcases.HomePageTest@7bd7d6d6]" started-at="2023-07-08T19:43:16Z" name="tearDown" finished-at="2023-07-08T19:43:20Z" duration-ms="3877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- qa.testcases.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Amazon Automation Testing -->
+</testng-results>
