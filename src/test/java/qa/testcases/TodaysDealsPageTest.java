@@ -33,7 +33,7 @@ public class TodaysDealsPageTest extends TestBase{
 	 @Test(priority = 1)
 		public void categoryCheckTest() throws InterruptedException {
 			boolean flag1 = todaysDealPage.categoryCheck();
-			System.out.println("CheckboxTest is: "+flag1);
+			System.out.println("Category is: "+flag1);
 
 			Assert.assertTrue(flag1);
 		}

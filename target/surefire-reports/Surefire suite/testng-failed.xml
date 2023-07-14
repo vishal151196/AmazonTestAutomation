@@ -3,11 +3,26 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
+      <class name="qa.testcases.OrderPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="searchResults" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- qa.testcases.OrderPageTest -->
+      <class name="qa.testcases.TodaysDealsPageTest">
+        <methods>
+          <include name="categoryCheckTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- qa.testcases.TodaysDealsPageTest -->
       <class name="qa.testcases.HomePageTest">
         <methods>
           <include name="setUp"/>
           <include name="MenuTest"/>
           <include name="tearDown"/>
+          <include name="CustomerNameTest"/>
         </methods>
       </class> <!-- qa.testcases.HomePageTest -->
     </classes>

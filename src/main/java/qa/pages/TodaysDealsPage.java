@@ -23,7 +23,7 @@ public class TodaysDealsPage extends TestBase {
 	@FindBy(xpath="(//span[contains(text(),'Computers & Accessories')])[1]")
 	WebElement dealCategory;
 	
-	@FindBy(xpath="//ul[@class='a-nostyle']//li[14]//label//input")
+	@FindBy(xpath="//ul[@class='a-nostyle']//input[@data-csa-c-element-id='filter-department-541966']")
 	private WebElement checkbox;
 	
 	public boolean categoryCheck() throws InterruptedException{

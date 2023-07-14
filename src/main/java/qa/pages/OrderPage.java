@@ -40,7 +40,7 @@ public class OrderPage extends TestBase {
 	@FindBy(xpath = "(//div[@data-index='2'])[1]")
 	WebElement firstProduct;
 
-	@FindBy(xpath = "(//div[@class='a-button-stack'])[1]")
+	@FindBy(xpath = "//input[@id='add-to-cart-button']")
 	WebElement addToCart;
 	
 	@FindBy(xpath ="//span[contains(text(),'Added to Cart')]")
@@ -107,9 +107,10 @@ public class OrderPage extends TestBase {
 	}
 
 	// click on first product
-	public boolean ClickonFirstProduct() {
-		
+	public boolean ClickonFirstProduct() throws InterruptedException {
+		Thread.sleep(500);
 		firstProduct.click();
+		Thread.sleep(500);
 		addToCart.click();
 		return addItemSuccess.isDisplayed();
 	}
