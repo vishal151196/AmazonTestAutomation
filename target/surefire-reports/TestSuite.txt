@@ -1,52 +1,40 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 169.833 s <<< FAILURE! - in TestSuite
-CustomerNameTest(qa.testcases.HomePageTest)  Time elapsed: 20.028 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Unable to locate element: //span[contains(text(),'Hello, Vishal')]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.0', revision: 'd7057100a6'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [be849ad7-d80d-4544-8a27-398a830bde94, findElement {using=xpath, value=//span[contains(text(),'Hello, Vishal')]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:45403, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18664, moz:profile: C:\Users\Vishal\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:45403/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: be849ad7-d80d-4544-8a27-398a830bde94
-	at qa.testcases.HomePageTest.CustomerNameTest(HomePageTest.java:33)
-
-searchResults(qa.testcases.OrderPageTest)  Time elapsed: 20.035 s  <<< FAILURE!
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 166.891 s <<< FAILURE! - in TestSuite
+searchResults(qa.testcases.OrderPageTest)  Time elapsed: 20.081 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 Unable to locate element: //input[@placeholder='Search Amazon']
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [58cb1686-b09c-41ff-9b49-c72bec15be7b, findElement {using=xpath, value=//input[@placeholder='Search Amazon']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:35709, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 5980, moz:profile: C:\Users\Vishal\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:35709/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 58cb1686-b09c-41ff-9b49-c72bec15be7b
+Command: [7e3c626f-5aba-46db-bd6e-005013500ae1, findElement {using=xpath, value=//input[@placeholder='Search Amazon']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:18231, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17956, moz:profile: C:\Users\Vishal\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:18231/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7e3c626f-5aba-46db-bd6e-005013500ae1
 	at qa.testcases.OrderPageTest.searchResults(OrderPageTest.java:53)
 
-categoryCheckTest(qa.testcases.TodaysDealsPageTest)  Time elapsed: 20.009 s  <<< FAILURE!
+categoryCheckTest(qa.testcases.TodaysDealsPageTest)  Time elapsed: 20.017 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 Unable to locate element: (//div[@class='nav-progressive-content']//a)[1]
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [ad9c9fdb-4dad-40d7-9977-fea560f642e8, findElement {using=xpath, value=(//div[@class='nav-progressive-content']//a)[1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:45879, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2868, moz:profile: C:\Users\Vishal\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:45879/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ad9c9fdb-4dad-40d7-9977-fea560f642e8
+Command: [93684fc4-6149-4d41-8ffa-01779e8bfd2b, findElement {using=xpath, value=(//div[@class='nav-progressive-content']//a)[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:44840, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10080, moz:profile: C:\Users\Vishal\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:44840/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 93684fc4-6149-4d41-8ffa-01779e8bfd2b
 	at qa.testcases.TodaysDealsPageTest.categoryCheckTest(TodaysDealsPageTest.java:35)
 
-MenuTest(qa.testcases.HomePageTest)  Time elapsed: 20.026 s  <<< FAILURE!
+MenuTest(qa.testcases.HomePageTest)  Time elapsed: 20.034 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 Unable to locate element: //a[@id='nav-hamburger-menu']
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.9.0', revision: 'd7057100a6'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [39a3be6b-236c-4aee-a759-b7ecd8b401c9, findElement {using=xpath, value=//a[@id='nav-hamburger-menu']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.1, moz:accessibilityChecks: false, moz:buildID: 20230706202047, moz:debuggerAddress: 127.0.0.1:47996, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20456, moz:profile: C:\Users\Vishal\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:47996/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 39a3be6b-236c-4aee-a759-b7ecd8b401c9
+Command: [2a8afa28-6300-49e0-8867-a4f9ccbacc81, findElement {using=xpath, value=//a[@id='nav-hamburger-menu']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:5928, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21024, moz:profile: C:\Users\Vishal\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5928/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2a8afa28-6300-49e0-8867-a4f9ccbacc81
 	at qa.testcases.HomePageTest.MenuTest(HomePageTest.java:39)
 

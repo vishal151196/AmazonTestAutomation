@@ -6,7 +6,7 @@
       <class name="qa.testcases.OrderPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="OrderCheck"/>
+          <include name="OrderCheck" invocation-numbers="1 2"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- qa.testcases.OrderPageTest -->

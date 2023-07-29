@@ -1,7 +1,3 @@
-/*
- * @autor : Naveen Khunteta
- * 
- */
 package qa.ExtentReportListener;
 
 import java.io.File;

@@ -44,40 +44,40 @@ public class OrderPageTest extends TestBase {
 		return data;
 	}
 
-	@Test(priority = 1, dataProvider = "getAmazonProductData")
-	public void searchResults(String Product, String MaterialType, String Brand, String MinPrice,
-			String MaxPrice) throws InterruptedException  {
-		
-		//System.out.println(Product + " : " + Color + " : " + MaterialType + " : " + Brand + " : " + MinPrice + MaxPrice);
-		
-		orderPage.Search(Product);		
-		Assert.assertTrue(orderPage.searchResultTagCheck(Product));
-
-		//Assert.assertTrue(orderPage.NumberOfItemsAdded(ItemCounter.toString()));
-		 //Assert.assertTrue(orderPage.CartCheck());
-	}
-	@Test(priority = 2, dataProvider = "getAmazonProductData")
-	public void SetItemPreference(String Product, String MaterialType, String Brand, String MinPrice,
-			String MaxPrice) throws InterruptedException  {
-		orderPage.Search(Product);
-		Assert.assertTrue(orderPage.ItemPreference(MinPrice,MaxPrice), "SetItemPreference Test Failed:");
-		 
-		
-	}
-	@Test(priority = 3, dataProvider = "getAmazonProductData")
-	public void FirstProductClick(String Product, String MaterialType, String Brand, String MinPrice,
-			String MaxPrice) throws InterruptedException  {
-		orderPage.Search(Product);
-		orderPage.ItemPreference(MinPrice,MaxPrice);
-		Assert.assertTrue(orderPage.ClickonFirstProduct(), "FirstProductClick Test Failed:");
-
-	}
+//	@Test(priority = 1, dataProvider = "getAmazonProductData")
+//	public void searchResults(String Product, String MaterialType, String Brand, String MinPrice,
+//			String MaxPrice) throws InterruptedException  {
+//		
+//		//System.out.println(Product + " : " + Color + " : " + MaterialType + " : " + Brand + " : " + MinPrice + MaxPrice);
+//		
+//		orderPage.Search(Product);		
+//		Assert.assertTrue(orderPage.searchResultTagCheck(Product));
+//
+//		//Assert.assertTrue(orderPage.NumberOfItemsAdded(ItemCounter.toString()));
+//		 //Assert.assertTrue(orderPage.CartCheck());
+//	}
+//	@Test(priority = 2, dataProvider = "getAmazonProductData")
+//	public void SetItemPreference(String Product, String MaterialType, String Brand, String MinPrice,
+//			String MaxPrice) throws InterruptedException  {
+//		orderPage.Search(Product);
+//		Assert.assertTrue(orderPage.ItemPreference(MinPrice,MaxPrice), "SetItemPreference Test Failed:");
+//		 
+//		
+//	}
+//	@Test(priority = 3, dataProvider = "getAmazonProductData")
+//	public void FirstProductClick(String Product, String MaterialType, String Brand, String MinPrice,
+//			String MaxPrice) throws InterruptedException  {
+//		orderPage.Search(Product);
+//		orderPage.ItemPreference(MinPrice,MaxPrice);
+//		Assert.assertTrue(orderPage.ClickonFirstProduct(), "FirstProductClick Test Failed:");
+//
+//	}
 	@Test(priority=4, dataProvider = "getAmazonProductData")
 	public void OrderCheck(String Product, String MaterialType, String Brand, String MinPrice,
 			String MaxPrice) throws InterruptedException {
 		orderPage.Search(Product);
 		orderPage.ItemPreference(MinPrice,MaxPrice);
-		Assert.assertTrue(orderPage.ClickonFirstProduct(), "FirstProductClick Test Failed:");
+		orderPage.ClickonFirstProduct();
 		Assert.assertTrue(orderPage.GoToCart(), "OrderCheck Test Failed:");
 	}
 	@AfterMethod

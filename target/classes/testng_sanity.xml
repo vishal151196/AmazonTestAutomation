@@ -4,7 +4,9 @@
   <test thread-count="5" name="Amazon Test">
     <classes>
       <class name="qa.testcases.LoginPageTest"/>
-      <!--<class name="qa.testcases.HomePageTest"/>-->
+      <class name="qa.testcases.HomePageTest"/>
+      <class name="qa.testcases.OrderPageTest"/>
+      <class name="qa.testcases.TodaysDealsPageTest"/>
     </classes>
   
   </test> <!-- Test -->

@@ -1,5 +1,6 @@
 package qa.pages;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -7,6 +8,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import qa.base.TestBase;
 
 public class OrderPage extends TestBase {
@@ -31,7 +35,8 @@ public class OrderPage extends TestBase {
 	@FindBy(xpath = "//input[@placeholder='Max']")
 	WebElement maxPrice;
 
-	@FindBy(xpath = "//span[@class='a-button-inner']//input[@type='submit']")
+//	@FindBy(xpath = "//span[@class='a-button-inner']//span[contains(text(),'Go')]")
+	@FindBy(xpath = "//span[@class='a-button-inner']//input")
 	WebElement priceGoBtn;
 	
 	@FindBy(xpath= "//div[@id='topRefinements/-1']")
@@ -57,7 +62,7 @@ public class OrderPage extends TestBase {
 //	@FindBy(xpath = "//span[@id='sc-subtotal-label-activecart']")
 //	WebElement NumberOfItemsAdded;
 //
-	@FindBy(xpath = "(//a[contains(text(),\"Go to Cart\")])[2]")
+	@FindBy(xpath = "//a[@href='/cart?ref_=sw_gtc']")
 	WebElement goToCart;
 
 	@FindBy(xpath = "//span[@id='sc-subtotal-label-activecart']")
@@ -68,9 +73,12 @@ public class OrderPage extends TestBase {
 	}
 
 	// enter item to search
-	public void Search(String Product) throws InterruptedException {
+	public boolean Search(String Product) throws InterruptedException {
 		searchBox.sendKeys(Product);
 		searchBtn.click();
+		String result = searchResultTag.getText().toString().replaceAll("^\"|\"$", "");
+		boolean flag = result.equals(Product);
+		return flag;
 //		Thread.sleep(500);
 //		addToCart.click();
 //		ClickonFirstProduct();
@@ -92,15 +100,18 @@ public class OrderPage extends TestBase {
 	// select different preferences of particular product
 	public boolean ItemPreference(String MinPrice, String MaxPrice) throws InterruptedException {
 
-		try {
-			js.executeScript("arguments[0].scrollIntoView(true);", temp);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		Thread.sleep(100);
+		
 		minPrice.sendKeys(MinPrice);
 		maxPrice.sendKeys(MaxPrice);
 //		Thread.sleep(00);
+//		try {
+//			js.executeScript("arguments[0].scrollIntoView(true);", priceGoBtn);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(priceGoBtn));
 		priceGoBtn.click();
 		return firstProduct.isDisplayed();
 		
@@ -110,36 +121,25 @@ public class OrderPage extends TestBase {
 	public boolean ClickonFirstProduct() throws InterruptedException {
 		Thread.sleep(500);
 		firstProduct.click();
-		Thread.sleep(500);
+//		Thread.sleep(500);
+		try {
+			js.executeScript("arguments[0].scrollIntoView(true);", addToCart);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		addToCart.click();
 		return addItemSuccess.isDisplayed();
 	}
-	
-	
-//	public boolean NumberOfItemsAdded(String NoofProducts) {
-//		try {
-//			js.executeScript("arguments[0].scrollIntoView(true);", NumberOfItemsAdded);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//		
-//		 String NoOfitems= NumberOfItemsAdded.getText().toString();
-//		 NoofProducts = "Subtotal ("+NoofProducts+" item";
-//		 System.out.println(NoofProducts);
-//		 try {
-//				js.executeScript("arguments[0].scrollIntoView(true);", NumberOfItemsAdded);
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}
-//		 return NoOfitems.equals(NoofProducts);
-//	}
+
 	public boolean GoToCart() {
 		goToCart.click();
-		return cartSubtotal.isDisplayed();
+		try {
+			js.executeScript("arguments[0].scrollIntoView(true);", cartSubtotal);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		boolean flag= cartSubtotal.isDisplayed();
+		return flag;
 	}
-
-//	public boolean CartCheck() {
-//		
-//	}
 
 }

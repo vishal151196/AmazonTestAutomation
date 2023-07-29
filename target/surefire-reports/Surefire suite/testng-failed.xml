@@ -22,7 +22,6 @@
           <include name="setUp"/>
           <include name="MenuTest"/>
           <include name="tearDown"/>
-          <include name="CustomerNameTest"/>
         </methods>
       </class> <!-- qa.testcases.HomePageTest -->
     </classes>
